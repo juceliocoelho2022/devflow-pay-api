@@ -265,7 +265,7 @@ http://localhost:8080/swagger-ui/index.html
 
 Professor de Desenvolvimento de Sistemas • Desenvolvedor Java • Spring Boot • Kotlin • Android • Python • PostgreSQL
 
-- 💼 LinkedIn: https://linkedin.com/in/jucelio-coelho
+- 💼 LinkedIn: https://linkedin.com/in/jucelio-desenvolvedor-sistema
 - 💻 GitHub: https://github.com/juceliocoelho2022
 
 ---
