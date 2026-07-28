@@ -3,9 +3,7 @@ package com.devflow.pay.auth.controller;
 import com.devflow.pay.auth.dto.LoginRequest;
 import com.devflow.pay.auth.dto.LoginResponse;
 import com.devflow.pay.auth.service.AuthService;
-
 import jakarta.validation.Valid;
-
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -23,7 +21,6 @@ public class AuthController {
             @Valid @RequestBody LoginRequest request) {
 
         return service.login(request);
-
     }
 
 }
