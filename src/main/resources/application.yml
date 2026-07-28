@@ -1,8 +1,14 @@
-springdoc:
-  swagger-ui:
-    path: /swagger
+spring:
 
-  api-docs:
-    path: /api-docs
+  datasource:
+    url: jdbc:postgresql://localhost:5432/devflow
+    username: postgres
+    password: 89327934
 
-  show-actuator: true
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
