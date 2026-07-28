@@ -1,17 +1,19 @@
-CREATE TABLE customers (
+CREATE TABLE customers(
 
-                           id UUID PRIMARY KEY,
+                          id UUID PRIMARY KEY,
 
-                           full_name VARCHAR(150),
+                          full_name VARCHAR(150) NOT NULL,
 
-                           email VARCHAR(150),
+                          email VARCHAR(150) UNIQUE NOT NULL,
 
-                           phone VARCHAR(20),
+                          document VARCHAR(20) UNIQUE NOT NULL,
 
-                           document VARCHAR(20),
+                          phone VARCHAR(20),
 
-                           created_at TIMESTAMP,
+                          active BOOLEAN NOT NULL,
 
-                           updated_at TIMESTAMP
+                          created_at TIMESTAMP,
+
+                          updated_at TIMESTAMP
 
 );
