@@ -14,29 +14,44 @@ public class ProductMapper {
 
         product.setName(request.name());
         product.setDescription(request.description());
+        product.setSku(request.sku());
         product.setPrice(request.price());
         product.setStock(request.stock());
+        product.setCategory(request.category());
+        product.setImageUrl(request.imageUrl());
+        product.setActive(true);
 
         return product;
+
     }
 
     public ProductResponse toResponse(Product product) {
 
         return new ProductResponse(
+
                 product.getId(),
                 product.getName(),
                 product.getDescription(),
+                product.getSku(),
                 product.getPrice(),
-                product.getStock()
+                product.getStock(),
+                product.getActive(),
+                product.getCategory(),
+                product.getImageUrl()
+
         );
+
     }
 
     public void update(Product product, ProductRequest request){
 
         product.setName(request.name());
         product.setDescription(request.description());
+        product.setSku(request.sku());
         product.setPrice(request.price());
         product.setStock(request.stock());
+        product.setCategory(request.category());
+        product.setImageUrl(request.imageUrl());
 
     }
 

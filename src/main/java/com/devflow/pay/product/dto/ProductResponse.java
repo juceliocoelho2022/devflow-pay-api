@@ -11,9 +11,17 @@ public record ProductResponse(
 
         String description,
 
+        String sku,
+
         BigDecimal price,
 
-        Integer stock
+        Integer stock,
+
+        Boolean active,
+
+        String category,
+
+        String imageUrl
 
 ) {
 }
